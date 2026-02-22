@@ -9437,10 +9437,19 @@ html.lenis body {
   background-color: transparent;
 }
 
-.testimonial-wrapper .testimonial-box {
+/* .testimonial-wrapper .testimonial-box {
   border-radius: 16px;
   background-color: var(--bg);
   padding: 30px 24px;
+} */
+.testimonial-box {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .testimonial-wrapper .testimonial-box .star {
@@ -9448,18 +9457,79 @@ html.lenis body {
   margin-bottom: 24px;
 }
 
-.testimonial-wrapper .testimonial-box p {
+/* .testimonial-wrapper .testimonial-box p {
   font-style: italic;
   font-weight: 500;
   max-width: 307px;
+} */
+.testimonial-box p {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 28px;
+    color: #555;
+    text-align: justify; 
+    margin: 15px 0 25px;
+    max-height: 220px;
+    overflow-y: auto;
+    padding-right: 8px;
 }
 
-.testimonial-wrapper .testimonial-box .info-item {
+.testimonial-box p::-webkit-scrollbar {
+    width: 5px;
+}
+
+.testimonial-box p::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+.star {
+    margin-bottom: 10px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.client-image img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.content h5 {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 600;
+
+}
+
+.content span {
+    font-size: 14px;
+    color: #888;
+
+}
+
+.swiper-slide {
+    height: auto;
+
+}
+
+.swiper-wrapper {
+    align-items: stretch;
+
+}
+
+/* .testimonial-wrapper .testimonial-box .info-item {
   display: flex;
   align-items: center;
   gap: 12px;
   margin-top: 90px;
-}
+} */
 
 @media (max-width: 1399px) {
   .testimonial-wrapper .testimonial-box .info-item {
@@ -9519,7 +9589,7 @@ html.lenis body {
   background-color: var(--theme-2);
   border-radius: 16px;
   position: relative;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.10s ease-in-out;
 }
 
 @media (max-width: 1399px) {
